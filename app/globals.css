@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg-start: #0f172a;
+  --bg-mid: #111827;
+  --bg-end: #0f172a;
+  --text: #f8fafc;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(120deg, var(--bg-start) 0%, var(--bg-mid) 42%, var(--bg-end) 100%);
+  color: var(--text);
+  transition: background 0.8s ease, color 0.8s ease;
+  animation: bgShiftLight 14s ease-in-out infinite alternate;
+}
+
+@keyframes bgShiftLight {
+  0% {
+    --bg-start: #0f172a;
+    --bg-mid: #111827;
+    --bg-end: #0f172a;
+  }
+  50% {
+    --bg-start: #172a46;
+    --bg-mid: #1f3153;
+    --bg-end: #111827;
+  }
+  100% {
+    --bg-start: #0a1220;
+    --bg-mid: #151f33;
+    --bg-end: #0f172a;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  scroll-margin-top: 92px;
+}
