@@ -130,25 +130,40 @@ export default function ContactContent() {
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    
     const form = e.currentTarget;
     const formData = new FormData(form);
+    
     setStatus('sending');
+    setMessage('');
 
-    const response = await fetch('/api/contact', {
-      method: 'POST',
-      body: JSON.stringify(Object.fromEntries(formData.entries())),
-      headers: { 'Content-Type': 'application/json' },
-    });
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.get('name'),
+          email: formData.get('email'),
+          subject: formData.get('subject'),
+          message: formData.get('message'),
+        }),
+      });
 
-    const data = await response.json();
+      const data = await response.json();
 
-    if (response.ok) {
-      setStatus('success');
-      setMessage(data.message ?? 'Message sent! We\'ll get back to you within 24 hours.');
-      form.reset();
-    } else {
+      if (response.ok) {
+        setStatus('success');
+        setMessage(data.message || 'Message sent successfully!');
+        form.reset(); // Form clear kar do
+      } else {
+        setStatus('error');
+        setMessage(data.error || 'Something went wrong. Please try again.');
+      }
+    } catch (error) {
       setStatus('error');
-      setMessage(data.error ?? 'Submission failed. Please try again.');
+      setMessage('Network error. Please check your connection and try again.');
     }
   }
 
@@ -206,7 +221,6 @@ export default function ContactContent() {
           }}
           className="relative group rounded-2xl border border-slate-700/60 bg-slate-800/50 backdrop-blur-sm p-8 overflow-hidden"
         >
-          {/* Subtle glow */}
           <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-violet-500/10 to-cyan-500/10 pointer-events-none" />
           <div className="absolute top-0 left-8 right-8 h-px opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-violet-500/60 to-cyan-500/60" />
 
@@ -217,9 +231,10 @@ export default function ContactContent() {
 
               {/* Name */}
               <label className="space-y-1.5">
-                <span className="text-xs font-medium text-slate-400 uppercase tracking-wider">Name</span>
+                <span className="text-xs font-medium text-slate-400 uppercase tracking-wider">Name *</span>
                 <input
                   name="name"
+                  type="text"
                   required
                   placeholder="Your full name"
                   className="w-full rounded-xl border border-slate-700/60 bg-slate-900/60 px-4 py-2.5 text-sm text-white outline-none placeholder:text-slate-500 focus:border-violet-500/60 focus:ring-1 focus:ring-violet-500/30 transition-all duration-200"
@@ -228,7 +243,7 @@ export default function ContactContent() {
 
               {/* Email */}
               <label className="space-y-1.5">
-                <span className="text-xs font-medium text-slate-400 uppercase tracking-wider">Email</span>
+                <span className="text-xs font-medium text-slate-400 uppercase tracking-wider">Email *</span>
                 <input
                   name="email"
                   type="email"
@@ -243,6 +258,7 @@ export default function ContactContent() {
                 <span className="text-xs font-medium text-slate-400 uppercase tracking-wider">Subject</span>
                 <input
                   name="subject"
+                  type="text"
                   placeholder="What's this about?"
                   className="w-full rounded-xl border border-slate-700/60 bg-slate-900/60 px-4 py-2.5 text-sm text-white outline-none placeholder:text-slate-500 focus:border-violet-500/60 focus:ring-1 focus:ring-violet-500/30 transition-all duration-200"
                 />
@@ -250,7 +266,7 @@ export default function ContactContent() {
 
               {/* Message */}
               <label className="col-span-1 sm:col-span-2 space-y-1.5">
-                <span className="text-xs font-medium text-slate-400 uppercase tracking-wider">Message</span>
+                <span className="text-xs font-medium text-slate-400 uppercase tracking-wider">Message *</span>
                 <textarea
                   name="message"
                   required
@@ -260,7 +276,7 @@ export default function ContactContent() {
                 />
               </label>
 
-              {/* Submit */}
+              {/* Submit Button */}
               <div className="col-span-1 sm:col-span-2">
                 <button
                   type="submit"
@@ -285,8 +301,8 @@ export default function ContactContent() {
                   )}
                 </button>
 
-                {/* Status message */}
-                {status !== 'idle' && status !== 'sending' && (
+                {/* Status Message */}
+                {message && (
                   <div className={`mt-4 flex items-center gap-2 text-sm rounded-xl px-4 py-3 border ${
                     status === 'success'
                       ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400'
