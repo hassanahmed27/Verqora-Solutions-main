@@ -196,7 +196,7 @@ export default function ContactContent() {
             <h1 className="text-4xl font-bold tracking-tight">Contact Us</h1>
           </div>
           <p className="text-lg text-slate-300 max-w-xl leading-relaxed">
-            Need help with your digital project? Send us a message and we'll get back to you within 24 hours.
+            Need help with your digital project? Send us a message and we&apos;ll get back to you within 24 hours.
           </p>
           <div className="mt-6 flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />

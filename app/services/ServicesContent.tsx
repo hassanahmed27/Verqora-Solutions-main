@@ -270,7 +270,7 @@ function CTASection() {
       <div className="relative z-10">
         <h3 className="text-2xl font-bold text-white mb-2">Start Your Project With Us</h3>
         <p className="text-slate-300 max-w-lg mx-auto leading-relaxed mb-6">
-          Describe your business challenge, and we'll propose a roadmap with a detailed timeline and transparent costs.
+          Describe your business challenge, and we&apos;ll propose a roadmap with a detailed timeline and transparent costs.
         </p>
         
         <a

@@ -132,7 +132,7 @@ function TestimonialCard({ item, index }: { item: typeof testimonials[0]; index:
 
       {/* Big decorative quote mark */}
       <div className={`absolute top-4 right-6 text-7xl font-serif leading-none ${colors.quote} select-none pointer-events-none`}>
-        "
+        {"\u201C"}
       </div>
 
       <div className="relative z-10">
@@ -141,7 +141,7 @@ function TestimonialCard({ item, index }: { item: typeof testimonials[0]; index:
 
         {/* Quote */}
         <p className="text-slate-200 text-sm leading-relaxed mb-6">
-          "{item.quote}"
+          {"\u201C"}{item.quote}{"\u201D"}
         </p>
 
         {/* Divider */}

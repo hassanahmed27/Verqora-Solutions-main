@@ -147,7 +147,7 @@ function AboutSection() {
             <div className="w-1.5 h-8 rounded-full bg-gradient-to-b from-cyan-400 to-violet-400" />
           </div>
           <p className="mx-auto max-w-2xl text-slate-300 leading-relaxed">
-            We're a full-stack software lab building high-growth products and platforms with rapid delivery and sustainable architecture.
+            We&apos;re a full-stack software lab building high-growth products and platforms with rapid delivery and sustainable architecture.
           </p>
         </div>
 
