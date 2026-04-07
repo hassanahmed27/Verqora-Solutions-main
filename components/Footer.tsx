@@ -78,7 +78,7 @@ export default function Footer() {
             <div className="mt-6 flex items-center gap-2">
 
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/verqora-solutions-8a12b0401/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-xl border border-slate-700/60 bg-slate-800/50 flex items-center justify-center text-slate-400 hover:text-violet-400 hover:border-violet-500/50 hover:bg-violet-500/10 transition-all duration-200"
@@ -87,7 +87,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/verqorasolutions?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-xl border border-slate-700/60 bg-slate-800/50 flex items-center justify-center text-slate-400 hover:text-pink-400 hover:border-pink-500/50 hover:bg-pink-500/10 transition-all duration-200"
@@ -95,14 +95,14 @@ export default function Footer() {
                 <Instagram size={15} />
               </a>
 
-              <a
+              {/* <a
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-xl border border-slate-700/60 bg-slate-800/50 flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-500/50 hover:bg-cyan-500/10 transition-all duration-200"
               >
                 <Twitter size={15} />
-              </a>
+              </a> */}
 
             </div>
           </div>
