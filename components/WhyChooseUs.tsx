@@ -7,7 +7,7 @@ const reasons = [
   {
     icon: Cpu,
     title: 'Modern Technologies',
-    description: 'Cutting-edge stack — React, Next.js, Spring Boot, and more — for scalable SaaS-grade solutions.',
+    description: 'Cutting-edge stack React, Next.js, Spring Boot, and more for scalable SaaS-grade solutions.',
     accent: 'violet',
   },
   {
@@ -37,7 +37,7 @@ const reasons = [
   {
     icon: Wrench,
     title: 'Continuous Improvement',
-    description: 'QA cycles, detailed tracking, performance audits, and iterative gains — always improving.',
+    description: 'QA cycles, detailed tracking, performance audits, and iterative gains always improving.',
     accent: 'purple',
   },
 ];

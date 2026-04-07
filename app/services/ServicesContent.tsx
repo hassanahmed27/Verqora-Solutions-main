@@ -328,7 +328,7 @@ export default function ServicesContent() {
             <h1 className="text-4xl font-bold tracking-tight">Services</h1>
           </div>
           <p className="text-lg text-slate-300 max-w-xl leading-relaxed">
-            Our full-service technology offering for businesses — from design to deployment.
+            Our full-service technology offering for businesses from design to deployment.
           </p>
           <div className="mt-6 flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
