@@ -47,7 +47,7 @@ export default function Footer() {
 
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
               Building innovative, scalable digital products for businesses globally.
-              From startups to enterprises — we deliver engineering quality that lasts.
+              From startups to enterprises we deliver engineering quality that lasts.
             </p>
 
             {/* Contact info */}

@@ -172,7 +172,7 @@ export default function WhyChooseUs() {
             <div className="w-1.5 h-8 rounded-full bg-gradient-to-b from-cyan-400 to-violet-400" />
           </div>
           <p className="mx-auto max-w-2xl text-slate-300 leading-relaxed">
-            We blend creativity, engineering discipline, and deep collaboration so your business gets real value — quickly and reliably.
+            We blend creativity, engineering discipline, and deep collaboration so your business gets real value quickly and reliably.
           </p>
         </div>
 

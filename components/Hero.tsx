@@ -63,7 +63,7 @@ export default function Hero() {
           className={`${base} ${mounted ? visible : hidden} mt-6 max-w-2xl mx-auto text-lg text-slate-300 sm:text-xl leading-relaxed`}
           style={{ transitionDelay: '200ms' }}
         >
-          From web apps to security systems — we deliver modern IT solutions that drive real business growth.
+          From web apps to security systems we deliver modern IT solutions that drive real business growth.
         </p>
 
         {/* CTA Buttons */}
@@ -119,7 +119,7 @@ export default function Hero() {
           style={{ transitionDelay: '500ms' }}
         >
           <p className="text-sm text-slate-300 leading-relaxed">
-            End-to-end digital engineering for startups and enterprises — responsive user experiences, secure APIs, graphic design, surveillance solutions, and optimized performance for fast launch and business-ready growth.
+            End-to-end digital engineering for startups and enterprises responsive user experiences, secure APIs, graphic design, surveillance solutions, and optimized performance for fast launch and business-ready growth.
           </p>
 
           <div className="mt-5 flex flex-wrap justify-center gap-2">
