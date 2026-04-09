@@ -21,6 +21,15 @@ const team = [
     linkedin: 'https://www.linkedin.com/in/mahad-arshad',
     initials: 'MA',
   },
+  {
+    name: 'Muhammad Moinuddin Sohail',
+    role: 'Software Quality Assurance | Bussiness Analyst',
+    specialty: 'Business Analysis & Client Server Application Testing',
+    current: 'Senior Consultant @ OZ',
+    tags: ['Business Analyst', 'Client Server applications testing', 'Software Quality Assurance', 'Web services Testing', 'Web applications testing'],
+    linkedin: 'https://www.linkedin.com/in/muhammad-moinuddin-sohail-08a10021/',
+    initials: 'MS',
+  },
 {
     name: 'Areeb Ahmed Siddiqui',
     role: 'ASP.NET Developer',
@@ -51,9 +60,9 @@ const team = [
    {
     name: 'Hassan Ahmed Siddiqui',
     role: 'Frontend Developer',
-    specialty: 'React · TypeScript · JavaScript',
+    specialty: 'React · TypeScript · JavaScript · Angular' ,
     current: '',
-    tags: ['React', 'TypeScript', 'JavaScript', 'UI Development'],
+    tags: ['React', 'TypeScript', 'JavaScript', 'UI Development' , 'Angular' ],
     linkedin: 'https://www.linkedin.com/in/hassan-ahmed-siddiqui2728',
     initials: 'HA',
   },
