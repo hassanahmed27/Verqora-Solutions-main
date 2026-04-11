@@ -98,7 +98,7 @@ export default function Hero() {
         >
           {[
             { value: '20+', label: 'Projects Delivered' },
-            { value: '6', label: 'Team Members' },
+            { value: '7', label: 'Team Members' },
             { value: '24h', label: 'Response Time' },
           ].map(stat => (
             <div
