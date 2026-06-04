@@ -17,6 +17,12 @@ const links = {
     { label: 'Backend Development', href: '/services' },
     { label: 'Graphic Designing', href: '/services' },
     { label: 'Surveillance & Security', href: '/services' },
+    { label: 'Mobile App Development', href: '/services' },
+    { label: 'Custom Software & SaaS', href: '/services' },
+    { label: 'AI & Automation Solutions', href: '/services' },
+    { label: 'Data & Cloud Services', href: '/services' },
+    { label: 'IT Consulting & Support', href: '/services' },
+    { label: 'SaaS Product', href: '/services' },
   ],
 };
 

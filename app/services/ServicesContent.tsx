@@ -93,6 +93,79 @@ const services = [
     ),
     accent: 'red',
   },
+  {
+    title: 'Mobile App Development',
+    description: 'Native and cross-platform mobile applications built for performance and user engagement.',
+    features: ['iOS & Android development', 'Cross-platform solutions', 'App store deployment'],
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 2h9A1.5 1.5 0 0118 3.5v17A1.5 1.5 0 0116.5 22h-9A1.5 1.5 0 016 20.5v-17A1.5 1.5 0 017.5 2zm4.5 16.25a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 15V5" />
+      </svg>
+    ),
+    accent: 'blue',
+  },
+  {
+    title: 'Custom Software & SaaS',
+    description: 'Tailored software solutions and SaaS products designed for your unique business needs.',
+    features: ['Custom software development', 'SaaS architecture', 'Subscription billing'],
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 7.5v9a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 16.5V7.5A2.25 2.25 0 016 5.25h11.25a2.25 2.25 0 012.25 2.25z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 9h7.5M8.25 12h7.5M8.25 15h4.5" />
+      </svg>
+    ),
+    accent: 'indigo',
+  },
+  {
+    title: 'AI & Automation Solutions',
+    description: 'Intelligent automation and AI-powered tools to streamline your business processes.',
+    features: ['Machine learning models', 'Process automation', 'Chatbots & virtual assistants'],
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.81 15.245a2.25 2.25 0 113.99 0 2.25 2.25 0 01-3.99 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15M7.5 7.5l3 3-3 3M12 7.5l3 3-3 3" />
+      </svg>
+    ),
+    accent: 'sky',
+  },
+  {
+    title: 'Data & Cloud Services',
+    description: 'Scalable cloud infrastructure and data solutions for modern businesses.',
+    features: ['Cloud migration', 'Data analytics', 'Database optimization'],
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5V7.5A2.25 2.25 0 015.25 5.25h13.5A2.25 2.25 0 0121 7.5v9a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 16.5z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 12V5m0 7l-3-3m3 3l3-3" />
+      </svg>
+    ),
+    accent: 'blue',
+  },
+  {
+    title: 'IT Consulting & Support',
+    description: 'Expert IT consulting and technical support to drive business growth.',
+    features: ['Technical strategy', 'IT infrastructure planning', '24/7 support'],
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a3.75 3.75 0 113.717 5.242A3.75 3.75 0 0111.25 11.25z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 12v3" />
+      </svg>
+    ),
+    accent: 'indigo',
+  },
+  {
+    title: 'SaaS product',
+    description: 'Specialized SaaS product development with scalable architecture and seamless user experience.',
+    features: ['Product development', 'Scalable architecture', 'User experience design'],
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.5l6 6 9-13.5" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18z" />
+      </svg>
+    ),
+    accent: 'sky',
+  },
 ];
 
 const accentMap: Record<string, {
@@ -166,6 +239,30 @@ const accentMap: Record<string, {
     text: 'text-red-400',
     check: 'text-red-400',
     topLine: 'from-red-500/60 to-rose-500/60',
+  },
+  blue: {
+    gradient: 'from-blue-500/20 to-sky-500/20',
+    border: 'hover:border-blue-500/50',
+    iconBg: 'bg-blue-500/20 text-blue-300 ring-blue-500/30',
+    text: 'text-blue-400',
+    check: 'text-blue-400',
+    topLine: 'from-blue-500/60 to-sky-500/60',
+  },
+  indigo: {
+    gradient: 'from-indigo-500/20 to-violet-500/20',
+    border: 'hover:border-indigo-500/50',
+    iconBg: 'bg-indigo-500/20 text-indigo-300 ring-indigo-500/30',
+    text: 'text-indigo-400',
+    check: 'text-indigo-400',
+    topLine: 'from-indigo-500/60 to-violet-500/60',
+  },
+  sky: {
+    gradient: 'from-sky-500/20 to-cyan-500/20',
+    border: 'hover:border-sky-500/50',
+    iconBg: 'bg-sky-500/20 text-sky-300 ring-sky-500/30',
+    text: 'text-sky-400',
+    check: 'text-sky-400',
+    topLine: 'from-sky-500/60 to-cyan-500/60',
   },
 };
 

@@ -24,6 +24,13 @@ const testimonials = [
     rating: 5,
     accent: 'emerald',
   },
+  {
+    quote: 'Excellent experience from start to finish. The team delivered a high-quality website ahead of time, with great design, functionality, and attention to detail. They went beyond expectations and were highly professional throughout. Highly recommended.',
+    author: 'Musab Kamran',
+    company: 'Client',
+    rating: 5,
+    accent: 'blue',
+  },
 ];
 
 const accentMap: Record<string, {
@@ -57,6 +64,14 @@ const accentMap: Record<string, {
     text: 'text-emerald-400',
     star: 'text-emerald-400',
     quote: 'text-emerald-300/30',
+  },
+  blue: {
+    gradient: 'from-blue-500/20 to-sky-500/20',
+    border: 'hover:border-blue-500/50',
+    avatar: 'bg-blue-500/20 text-blue-300 ring-blue-500/30',
+    text: 'text-blue-400',
+    star: 'text-blue-400',
+    quote: 'text-blue-300/30',
   },
 };
 
