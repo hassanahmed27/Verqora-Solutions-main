@@ -63,7 +63,7 @@ export default function Footer() {
                 className="flex items-center gap-2.5 text-sm text-slate-400 hover:text-violet-400 transition-colors duration-200"
               >
                 <Mail size={14} className="text-violet-400 flex-shrink-0" />
-                verqorasolution@gmail.com
+                info@verqorasolutions.com
               </a>
 
               <a
