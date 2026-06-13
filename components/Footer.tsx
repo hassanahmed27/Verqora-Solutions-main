@@ -84,7 +84,7 @@ export default function Footer() {
             <div className="mt-6 flex items-center gap-2">
 
               <a
-                href="https://www.linkedin.com/in/verqora-solutions-8a12b0401/"
+                href="https://www.linkedin.com/company/verqora-solutions1/posts/?feedView=all"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-xl border border-slate-700/60 bg-slate-800/50 flex items-center justify-center text-slate-400 hover:text-violet-400 hover:border-violet-500/50 hover:bg-violet-500/10 transition-all duration-200"
